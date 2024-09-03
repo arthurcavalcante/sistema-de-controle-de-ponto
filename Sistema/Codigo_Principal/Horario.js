@@ -1,3 +1,8 @@
+navigator.geolocation.getCurrentPosition((position) => {
+    console.log(position);
+});
+  
+
 const diaSemana = document.getElementById("Dia-Semana");
 const diaMesAno = document.getElementById("Dia-Mes-Ano");
 const tempo = document.getElementById("Tempo");
@@ -33,7 +38,17 @@ function getWeekDay() {
     return days[date.getDay()];
 }
 
+ConfirmarHorario.textContent = "Você deseja marcar o ponto no horário de " + getCurrentTime() + " e na data " + getCurrentDate() + " ? "
+
 setInterval(updateDateTime, 1000);
+
+function PermitirPonto() {
+    const SimHorario = document.getElementById("sim-marca-ponto");
+    const NaoHorario = document.getElementById("nao-marca-ponto");
+    NaoHorario.addEventListener("click", () => {
+        // fazer depois
+    });
+}
 
 Ponto.addEventListener("click", () => {
     dialog.showModal();
