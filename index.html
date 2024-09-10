@@ -11,17 +11,29 @@
         <p id="Dia-Semana"></p>
         <p id="Dia-Mes-Ano"></p>
         <p id="Tempo"></p>
-        <button id="button-bater-ponto">Bater Ponto!</button>
+        <button id="button-bater-ponto">Bater Ponto</button>
+        <br>
+        <button id="ver-ultimo-ponto">Ver Ultimo Ponto</button>
     </div>
     <dialog id="dialog-ponto">
         <section>
             <p id="confirmar-horario"></p>
         </section>
-            <menu>
-                <button id="sim-marca-ponto">Confirmar!</button>
-                <button id="nao-marca-ponto">Cancelar!</button>
-            </menu>   
+        <menu>
+            <label for="pontos">Escolha o tipo de ponto: </label>
+            <select name="pontos_marcar" id="ponto">
+                <option value="ponto_entrada" id="P_entrada">Ponto de entrada</option>
+                <option value="ponto_intervaloIn" id="Int_In">Ponto do inicio de intervalo</option>
+                <option value="ponto_intervaloOut" id="Int_Out">Ponto do final do intervalo</option>
+                <option value="ponto_saida" id="P_saida">Ponto de saída</option>
+            </select>
+            <button id="Registrar_Ponto">Confirmar Ponto!</button>
+            <button id="Fechar">Fechar</button>
+        </menu>   
     </dialog>
     <script src="Sistema/Codigo_Principal/Horario.js"></script>
+</body>
+<body>
+    <script src="Sistema/Codigo_Principal/Verificar.js"></script>
 </body>
 </html>
