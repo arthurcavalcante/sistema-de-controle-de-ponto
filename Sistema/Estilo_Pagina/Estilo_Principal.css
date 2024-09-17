@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('Background_IMAGE.jpeg');
+    background-image: url('/Imagem-fundo.jpeg');
     background-size: cover;
     color: #333;
 }
@@ -48,7 +48,7 @@ dialog {
 }
 
 menu {
-    text-align: center;
+    text-align: middle;
 }
 
 label, select, button {

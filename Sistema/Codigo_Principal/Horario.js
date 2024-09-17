@@ -38,9 +38,11 @@ function getWeekDay() {
     return days[date.getDay()];
 }
 
+
 setInterval(updateDateTime, 1000);
 
 Ponto.addEventListener("click", () => {
+    const currentDateTime = `${getCurrentDate()} ${getCurrentTime()}`;
+    ConfirmarHorario.textContent = `Confirme o horário: ${currentDateTime}`;
     dialog.showModal();
 });
-
